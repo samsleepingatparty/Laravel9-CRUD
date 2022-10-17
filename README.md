@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="image/laravel.png" alt="Laravel" width="80" height="80">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/50px-Laravel.svg.png?20190820171151" alt="Laravel" width="80" height="80">
   </a>
 <h3 align="center">CRUD menggunakan Laravel 9 & Bootstrap (AdminLTE)</h3>
   <p align="center">
