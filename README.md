@@ -47,37 +47,40 @@ Points:
 
 Siapkan XAMPP, dan NodeJS versi terbaru. Start XAMPP Server & PHPmyAdmin.
 
-### Installation
+### Installasi
 
-_Installation. CMD._
+_Instalasi menggunakan CMD, Powershell, atau teriminal lainnya._
 
-1. Create Project (Composer)
+1. Membuat project dengan Composer
    ```sh
    composer create-project laravel/laravel folder
    ```
-2. Serve to run for the first time
+2. Jalankan project pertama kali
    ```sh
    php artisan serve
    ```
-Open VSCode with (code .)
+3. Buka folder project di vscode
+   ```sh
+   Open VSCode with (code .)
+   ```
 
 <!-- Awal -->
 ## Route, Model, dan Koneksi
 
 ### Route
-* _Sebelu melakukan route, buat database dan table di Phpmyadmin._
+* _Sebelum melakukan route, buat database dan table di Phpmyadmin._
 * _Konfigurasi database dan koneksi ada pada file .env bagian DB._
 
-1. Migrate
+1. Migrasi
    ```sh
    php artisan migrate
    ```
-2. Create new table
+2. Membuat table baru
    ```sh
    php artisan make:migration create_product_table
    ```
    
-* _On create_product_table add._
+* _Pada create_product_table tambahkan:._
 
 3. Add variables on public function up()
    ```sh
@@ -87,17 +90,17 @@ Open VSCode with (code .)
    $table->enum('stock', ['Ready','No']);
    $table->timestamps();
    ```
-<b>nullable() artinya bisa dikosongkan. enum untuk berupa pilihan</b>
+   <b>nullable() artinya bisa dikosongkan. enum untuk berupa pilihan</b>
 
-<b>Migrasikan tabel baru</b>
+   <b>Migrasikan tabel baru</b>
 
-4. Migrate
+4. Migrasi
    ```sh
    php artisan migrate
    ```
 
 ### Model 
-_Model, perwakilan dari tiap-tiap tabel yang akan dimanipulasi di Laravel._
+  _Model, perwakilan dari tiap-tiap tabel yang akan dimanipulasi di Laravel._
 
 1. Membuat model
    ```sh
@@ -124,7 +127,7 @@ _Model, perwakilan dari tiap-tiap tabel yang akan dimanipulasi di Laravel._
    ```sh
    php artisan make:controller ProductController
    ```
-<b>Folder Controller ada di app/Http/Controllers</b>
+   <b>Folder Controller ada di app/Http/Controllers</b>
 
 3. Edit route
    ```sh
